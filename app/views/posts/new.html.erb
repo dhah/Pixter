@@ -1,0 +1,15 @@
+<div class="private-square span6 offset3 text-center">
+  
+  <h1> Upload your Image</h1>
+  <br/>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title, label: 'Username' %> 
+  <br/>
+  <%= f.input :description,  label: 'Image Description' %>
+  
+  
+  <%= f.button :submit, :class => 'btn btn-warning' %>
+ <% end %>
+  
+</div>
+
