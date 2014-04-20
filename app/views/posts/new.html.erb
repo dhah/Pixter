@@ -3,13 +3,15 @@
   <h1> Upload your Image</h1>
   <br/>
 <%= simple_form_for @post do |f| %>
-  <%= f.input :title, label: 'Username' %> 
+  <%= f.input :title, label: 'Title' %> 
   <br/>
   <%= f.input :description,  label: 'Image Description' %>
-  
-  
+  <br/>
+  <%= f.input :image %>
+  <br/>
   <%= f.button :submit, :class => 'btn btn-warning' %>
  <% end %>
   
 </div>
 
+ 
